@@ -35,63 +35,66 @@
             this.barcodeTxT = new System.Windows.Forms.TextBox();
             this.startCapturBTN = new System.Windows.Forms.Button();
             this.goToSignatureBTN = new System.Windows.Forms.Button();
+            this.addItemButton = new System.Windows.Forms.Button();
+            this.dataBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.barcodePicBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(88, 45);
+            this.label1.Location = new System.Drawing.Point(12, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Camera";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 517);
+            this.label2.Location = new System.Drawing.Point(12, 517);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(50, 15);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Barcode";
             // 
             // camerasComBox
             // 
             this.camerasComBox.FormattingEnabled = true;
-            this.camerasComBox.Location = new System.Drawing.Point(132, 37);
+            this.camerasComBox.Location = new System.Drawing.Point(67, 42);
             this.camerasComBox.Name = "camerasComBox";
-            this.camerasComBox.Size = new System.Drawing.Size(604, 23);
+            this.camerasComBox.Size = new System.Drawing.Size(593, 23);
             this.camerasComBox.TabIndex = 2;
             // 
             // barcodePicBox
             // 
-            this.barcodePicBox.Location = new System.Drawing.Point(88, 88);
+            this.barcodePicBox.Location = new System.Drawing.Point(12, 88);
             this.barcodePicBox.Name = "barcodePicBox";
             this.barcodePicBox.Size = new System.Drawing.Size(648, 415);
+            this.barcodePicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.barcodePicBox.TabIndex = 3;
             this.barcodePicBox.TabStop = false;
             // 
             // barcodeTxT
             // 
-            this.barcodeTxT.Location = new System.Drawing.Point(138, 509);
+            this.barcodeTxT.Location = new System.Drawing.Point(62, 509);
             this.barcodeTxT.Name = "barcodeTxT";
             this.barcodeTxT.Size = new System.Drawing.Size(598, 23);
             this.barcodeTxT.TabIndex = 4;
             // 
             // startCapturBTN
             // 
-            this.startCapturBTN.Location = new System.Drawing.Point(365, 548);
+            this.startCapturBTN.Location = new System.Drawing.Point(701, 266);
             this.startCapturBTN.Name = "startCapturBTN";
             this.startCapturBTN.Size = new System.Drawing.Size(75, 23);
             this.startCapturBTN.TabIndex = 5;
-            this.startCapturBTN.Text = "Capture";
+            this.startCapturBTN.Text = "Scan";
             this.startCapturBTN.UseVisualStyleBackColor = true;
             this.startCapturBTN.Click += new System.EventHandler(this.startCapturBTN_Click);
             // 
             // goToSignatureBTN
             // 
-            this.goToSignatureBTN.Location = new System.Drawing.Point(528, 548);
+            this.goToSignatureBTN.Location = new System.Drawing.Point(701, 509);
             this.goToSignatureBTN.Name = "goToSignatureBTN";
             this.goToSignatureBTN.Size = new System.Drawing.Size(75, 23);
             this.goToSignatureBTN.TabIndex = 6;
@@ -99,11 +102,33 @@
             this.goToSignatureBTN.UseVisualStyleBackColor = true;
             this.goToSignatureBTN.Click += new System.EventHandler(this.goToSignatureBTN_Click);
             // 
+            // addItemButton
+            // 
+            this.addItemButton.Location = new System.Drawing.Point(701, 88);
+            this.addItemButton.Name = "addItemButton";
+            this.addItemButton.Size = new System.Drawing.Size(75, 23);
+            this.addItemButton.TabIndex = 7;
+            this.addItemButton.Text = "Add Item";
+            this.addItemButton.UseVisualStyleBackColor = true;
+            this.addItemButton.Click += new System.EventHandler(this.addItemButton_Click);
+            // 
+            // dataBTN
+            // 
+            this.dataBTN.Location = new System.Drawing.Point(701, 42);
+            this.dataBTN.Name = "dataBTN";
+            this.dataBTN.Size = new System.Drawing.Size(75, 23);
+            this.dataBTN.TabIndex = 8;
+            this.dataBTN.Text = "Data";
+            this.dataBTN.UseVisualStyleBackColor = true;
+            this.dataBTN.Click += new System.EventHandler(this.dataBTN_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 583);
+            this.ClientSize = new System.Drawing.Size(813, 544);
+            this.Controls.Add(this.dataBTN);
+            this.Controls.Add(this.addItemButton);
             this.Controls.Add(this.goToSignatureBTN);
             this.Controls.Add(this.startCapturBTN);
             this.Controls.Add(this.barcodeTxT);
@@ -130,5 +155,7 @@
         private TextBox barcodeTxT;
         private Button startCapturBTN;
         private Button goToSignatureBTN;
+        private Button addItemButton;
+        private Button dataBTN;
     }
 }
